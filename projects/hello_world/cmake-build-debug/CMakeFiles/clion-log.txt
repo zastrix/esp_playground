@@ -1,6 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/dgmiller/esp/projects/hello_world
-sh: ps: command not found
-sh: ps: command not found
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/dgmiller/esp/projects/hello_world/cmake-build-debug
