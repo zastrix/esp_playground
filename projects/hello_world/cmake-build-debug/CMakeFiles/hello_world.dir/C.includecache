@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dgmiller/esp/projects/hello_world/main/hello_world_main.c
+stdio.h
+-
+freertos/FreeRTOS.h
+/Users/dgmiller/esp/projects/hello_world/main/freertos/FreeRTOS.h
+freertos/task.h
+/Users/dgmiller/esp/projects/hello_world/main/freertos/task.h
+esp_system.h
+/Users/dgmiller/esp/projects/hello_world/main/esp_system.h
+esp_spi_flash.h
+/Users/dgmiller/esp/projects/hello_world/main/esp_spi_flash.h
+
