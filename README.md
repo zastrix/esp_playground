@@ -1,10 +1,11 @@
 # ESP32 Notes
 
-Using the [ExpressIF IDF ][1] the goal of this project is to learn more about the ESP32, writing applications that use FreeRTOS tasks and ESP system's API (no arduino business here).  I'll be following the [ExpressIF Guide][2] as well as learning from Neil Kolban's [youtube][3] channel.
+Using the [ExpressIF IDF ][1] the goal of this project is to learn more about the ESP32, writing applications that use FreeRTOS tasks and ESP system's API (no arduino business here).  I'll be following the [ExpressIF Guide][2] as well as learning from Neil Kolban's [youtube][3] channel (and some of his great [snippets][4]).
 
 [1]: https://github.com/espressif/esp-idf
 [2]: https://esp-idf.readthedocs.io/en/latest/get-started/index.html#get-started-get-esp-idf
 [3]: https://www.youtube.com/channel/UChKn_BlaVrMrhEquPNI6HuQ
+[4]: https://github.com/nkolban/esp32-snippets
 
 
 
@@ -49,9 +50,17 @@ Set fonts to Menlo, 12pt.
 
 #### OLED Display
 
-Example code - https://www.hackster.io/johnnyfrx/esp32-with-integrated-oled-wemos-lolin-getting-started-07ac5d
+For my model (WeMOS), the I2C connection to the SSD1306 OLED are as follows:
 
-> The OLED display is connected to pins 5 and 4 as an I2C device. Most of the oled drivers for the 1306 OLED module on arduino use different pins.
+```
+SDA = GPIO_NUM_5
+SCL = GPIO_NUM_4
+ADDRESS = 0x3C
+```
+
+
+
+Example code - https://www.hackster.io/johnnyfrx/esp32-with-integrated-oled-wemos-lolin-getting-started-07ac5d
 
 DEMO code: https://github.com/ThingPulse/esp8266-oled-ssd1306/tree/master/examples/SSD1306SimpleDemo
 
@@ -67,3 +76,4 @@ Github - https://github.com/micropython/micropython/tree/master/ports
 
 
 
+i2c example? https://github.com/yanbe/bme280-esp-idf-i2c/blob/master/main/main.c
